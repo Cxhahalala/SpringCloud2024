@@ -77,6 +77,7 @@ public class PayController
         }
         return ResultData.success(i);
     }
+
     @GetMapping("/pay/get/info")
     private String getInfoByConsul(@Value("${atguigu.info}") String info){
         System.out.println(info);
